@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <script src="js/masks.js"></script>
-    <script src="js/test-app.js"></script>
+    <script src="js/app.js"></script>
 
     <title>Consulta de Clientes</title>
   </head>
@@ -62,13 +62,15 @@
     </nav>
     
 
-<div class="container-xxl">
+<div class=" container-xxl overflow-auto">
   <table class="table table-striped">
     <thead>
       <tr>
         <th scope="col">ID</th>
         <th scope="col">Nome do Cliente</th>
         <th scope="col">CPF</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Celular</th>
         <th scope="col">CEP</th>
         <th scope="col">Endereço</th>
         <th scope="col">Número</th>
@@ -77,18 +79,18 @@
         <th scope="col">UF</th>
       </tr>
     </thead>
-    <tbody id="customerList" ></tbody>
+    <tbody style="font-size: 13px;" id="customerList" ></tbody>
   </table>
-  
-  <div class="d-flex justify-content-end pb-5 pt-3">
-    <a id="whatsBtn" onclick="customerMsg()" class="btn btn-success mx-1">Enviar mensagem <i class="fab fa-whatsapp"></i></a>
-    <a class="btn btn-info mx-1">Enviar E-mail <i class="far fa-envelope"></i></a>
-    <a class="btn btn-warning mx-1">Solic. Documentos <i class="far fa-file-pdf"></i></a>
-    <a href="pdf/contrato_cessao/contrato-cessao-PLUMA.html" class="btn btn-primary mx-1">Contrato Cessão <i class="far fa-file-pdf"></i></a>
-    <a href="pdf/termo_cessao/termo-cessao-PLUMA.html" class="btn btn-primary mx-1">Termo Cessão <i class="far fa-file-pdf"></i></a>
-    <a class="btn btn-success mx-1">Boas-vindas <i class="far fa-file-pdf"></i></a>
-    <a class="btn btn-danger mx-1">Reprovação <i class="far fa-file-pdf"></i></a>
-  </div>
+</div >
+
+<div class="container-xxl d-flex justify-content-end pb-5 pt-4">
+  <a id="whatsBtn" onclick="customerMsg()" class="btn btn-success mx-1" target="_blank">Enviar mensagem <i class="fab fa-whatsapp"></i></a>
+  <a href="https://outlook.office.com/mail/inbox" target="_blank" class="btn btn-info mx-1">Enviar E-mail <i class="far fa-envelope"></i></a>
+  <a class="btn btn-warning mx-1">Solic. Documentos <i class="far fa-file-pdf"></i></a>
+  <a href="pdf/contrato_cessao/contrato-cessao-PLUMA.html" class="btn btn-primary mx-1">Contrato Cessão <i class="far fa-file-pdf"></i></a>
+  <a href="pdf/termo_cessao/termo-cessao-PLUMA.html" class="btn btn-primary mx-1">Termo Cessão <i class="far fa-file-pdf"></i></a>
+  <a class="btn btn-success mx-1">Boas-vindas <i class="far fa-file-pdf"></i></a>
+  <a class="btn btn-secondary mx-1">Reprovação <i class="far fa-file-pdf"></i></a>
 </div>
 
 <!-- MODAL LOGOFF -->

@@ -1,3 +1,4 @@
+
 function fillDocuments(id){
   document.getElementById("nameCustomer").innerHTML = JSON.parse(localStorage[id]).name;
   document.getElementById("nameCustomerSignature").innerHTML = JSON.parse(localStorage[id]).name;
@@ -19,3 +20,5 @@ fillDocuments(customerId)
 //DATE TODAY
 let today = new Date().toLocaleDateString(); 
 document.getElementById("dateToday").innerHTML = today;
+
+

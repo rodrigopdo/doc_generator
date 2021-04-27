@@ -6,7 +6,6 @@
   }
 ?>
 
-
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -19,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <script defer src="js/masks.js"></script>
-    <script defer src="js/test-app.js"></script>
+    <script defer src="js/app.js"></script>
     <script defer src="js/cep.js"></script>
 
     <title>Gerador de Documentos</title>
@@ -133,15 +132,11 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Enviado!</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Cadastro armazenado em LocalStorage!</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
       </div>
     </div>
   </div>
