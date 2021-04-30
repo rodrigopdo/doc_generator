@@ -1,13 +1,12 @@
 <?php
-
   session_start();
 
-  //CHECK AUTH
   $user_auth = false;
 
   $user_app = array(
-    array( 'user' => 'admin', 'password' => '131004'),
-    array( 'user' => 'rp', 'password' => '101078'),
+    array( 'user' => 'rodrigo', 'password' => '131004'),
+    array( 'user' => 'marcio', 'password' => '101078'),
+    array( 'user' => 'gustavo', 'password' => '511505'),
   );
   
   foreach($user_app as $users) {
@@ -25,9 +24,4 @@
     header('Location: index.php?login=erro');
   };
   
-  // echo $_POST['user'];
-  // echo '<br />';
-  // echo $_POST['password'];
-  // echo '<hr />';
-
 ?>

@@ -1,6 +1,6 @@
 
 class CustomerData {
-	constructor(name, cpf, email, phone, address, number, addOnAddress, district, city, uf, cep) {
+	constructor(name, cpf, email, phone, address, number, addOnAddress, district, city, uf, cep, loan) {
 		this.name = name
 		this.cpf = cpf
 		this.email = email
@@ -12,6 +12,7 @@ class CustomerData {
 		this.city = city
 		this.uf = uf
 		this.cep = cep
+		this.loan = loan
 	}
 };
 
@@ -68,6 +69,7 @@ function registerUser() {
   let inputCity = document.getElementById("localidade");
   let inputUf = document.getElementById("uf");
   let inputCep = document.getElementById("cep");
+  let inputLoan = document.getElementById("loan");
 
 	let customerData = new CustomerData(
 		inputName.value, 
@@ -80,7 +82,8 @@ function registerUser() {
 		inputDistrict.value,
 		inputCity.value,
 		inputUf.value,
-		inputCep.value
+		inputCep.value,
+		inputLoan.value
 	)
 	dataBase.register(customerData);
   // alert("Dados armazenados em LocalStorage");
@@ -130,3 +133,7 @@ function customerMsg() {
 	let phoneClean = phone.replace('(','').replace(')', '').replace(' ','').replace('-','');
 	whatsLink.setAttribute("href", `https://api.whatsapp.com/send?l=pt&phone=55${phoneClean}`);
 }
+
+let jsonData = JSON.parse(localStorage[3]).loan;
+let objData = JSON.parse(jsonData);
+console.log(objData.qtdParcelas);

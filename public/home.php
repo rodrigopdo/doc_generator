@@ -1,31 +1,69 @@
-
 <?php
   session_start();
+
   if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM') {
     header('Location: index.php?login=erro2');
-  }
+  }  
 ?>
 
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <script defer src="js/masks.js"></script>
-    <script defer src="js/app.js"></script>
-    <script defer src="js/cep.js"></script>
+    <style type="text/css">
+      body {
+        background-color: #f3f3f3;
+        box-sizing: border-box;      
+      }
+      .container {
+        max-width: 1100px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 70px auto;
+      }
+      .item {
+        width: 200px;
+        background-color: #fff;
+        color: #333333;
+        box-shadow: 0 0.375em 1.6rem 0 rgba(0,0,0,.1);
+        margin: 10px;
+        padding: 20px 5px;
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.3s ease-in;
+        text-decoration: none;
+      }
+      .item:hover {
+        transform: scale(1.03);
+      }
+      .item h1 {
+        margin: 10px auto -20;
+      }
+      .header {
+        background-color: #D8D8D8;
+        display: flex;
+        margin: 0 auto;
+        padding: 7px 30px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header p {
+        margin: 0;
+        color: #6E6E6E;
+      }
+    </style>
 
-    <title>Gerador de Documentos</title>
+    <title>Home</title>
   </head>
-  <body class="bg-light">
+  <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/logo-light.png" width="100" class="d-inline-block align-top ms-5" alt="">
@@ -38,7 +76,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav navbar-nav ms-auto me-5 mb-2 mb-lg-0">
             <li class="nav-item me-4">
-              <a class="nav-link" href="consulta.php">Consulta <i class="fas fa-search"></i></a>
+              <a class="nav-link" href="cadastro.php">Cadastro</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="consulta.php">Consulta</a>
             </li>
             <li class="nav-item dropdown me-4">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,83 +106,31 @@
         </div>
       </div>
     </nav>
-    
-<!-- FORM -->
-<div class="container col-md-8 mt-2">    
-  <div class="card">
-    <div class="card-header text-start text-success fw-bold">
-      <h6 class="m-0"><i class="fas fa-user-edit"></i> CADASTRO NOVO CLIENTE </H5> 
-    </div>
-    <div class="card-body">
-      <form class="row g-3">
-        <div class="col-md-8 form-floating">
-          <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required autofocus maxlength="70" minlength="6">
-          <label for="nomeCompleto" class="form-label">Nome Completo</label>
-        </div>
-        <div class="col-md-4 form-floating">
-          <input type="text" class="form-control" id="cpf" placeholder="CPF" required data-js="cpf">
-          <label for="cpf" class="form-label">CPF</label>
-        </div>
-        <div class="col-md-8 form-floating">
-          <input type="email" class="form-control" id="email" placeholder="E-mail" required maxlength="50" minlength="6">
-          <label for="email" class="form-label">Email</label>
-        </div>
-        <div class="col-md-4 form-floating">
-          <input type="text" class="form-control" id="phone" placeholder="Telefone Celular" required data-js="celular">
-          <label for="celular" class="form-label">Telefone Celular</label>
-        </div>
-        <div class="col-md-3 form-floating">
-          <input type="text" class="form-control" id="cep" placeholder="CEP" required maxlength="9" data-textep">
-          <label for="cep" class="form-label">CEP</label>
-        </div>
-        <div class="col-md-9 form-floating">
-          <input type="text" class="form-control" id="logradouro" placeholder="Endereço" required maxlength="100">
-          <label for="logradouro" class="form-label">Endereço</label>
-        </div>
-        <div class="col-md-2 form-floating">
-          <input type="text" class="form-control" id="numero" placeholder="Número" required>
-          <label for="numero" class="form-label">Número</label>
-        </div>
-        <div class="col-md-5 form-floating">
-          <input type="text" class="form-control" id="complemento" placeholder="Complemento" maxlength="100">
-          <label for="complemento" class=" form-label">Complemento</label>
-        </div>
-        <div class="col-md-5 form-floating">
-          <input type="text" class="form-control" id="bairro" placeholder="Bairro" required minlength="3" maxlength="9">
-          <label for="bairro" class="form-label">Bairro</label>
-        </div>
-        <div class="col-md-10 form-floating">
-          <input type="text" class="form-control" id="localidade" placeholder="Cidade" required>
-          <label for="localidade" class="form-label">Cidade</label>
-        </div>
-        <div class="col-md-2 form-floating">
-          <input type="text" class="form-control" id="uf" placeholder="UF" required minlength="1" maxlength="2">
-          <label for="uf" class="form-label">UF</label>
-        </div>
 
-        <div class="col-12 mt-4">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#modalSubmitData" onclick="registerUser()" class="btn btn-success col-12">Enviar</button>
-        </div>
-      </form>      
+    <div class="header">
+      <p><i class="fas fa-user"></i> <?php echo "TESTE"?> </p>
+      <p><script> document.write(new Date().toLocaleDateString()); </script></p>
     </div>
-  </div>
-</div>
 
-<!-- MODAL ENVIAR -->
-<div class="modal fade" id="modalSubmitData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cadastro armazenado em LocalStorage!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
-      </div>
-    </div>
+  <div class="container">
+      <a class="item" href="cadastro.php"><h1 style="color: #088A29;"><i class="fas fa-user-edit"></i></h1><br>Cadastro<br>de Cliente</a>
+
+      <a class="item" href="consulta.php"><h1 style="color: #088A29;"><i class="fas fa-search"></i></h1><br>Consulta<br>de Cliente</a>
+
+      <a class="item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html"><h1 style="color: #3104B4;"><i class="fas fa-file-signature"></i></h1><br>Contrato<br>de Cessão</a>
+
+      <a class="item" href="pdf/termo_cessao/termo-cessao-PLUMA.html"><h1 style="color: #3104B4;"><i class="fas fa-file-signature"></i></h1><br>Termo<br>de Cessão</a>
+
+      <a class="item" href="#"><h1 style="color: #FACC2E"><i class="fas fa-file-upload"></i></h1><br>Solicitação de<br>Documentos</a>
+
+      <a class="item" href="#"><h1 style="color: #FACC2E"><i class="fas fa-handshake"></i></h1><br>Notificação de<br>Boas-Vindas</a>
+
+      <a class="item" href="#" onclick="localStorage.clear()"><h1 style="color: #FE2E64;"><i class="fas fa-trash-alt"></i></h1><br>Limpar<br>LocalStorage</a>
+
+      <a class="item" href="home.php"><h1 style="color: #FE2E64;"><i class="fas fa-sign-out-alt"></i></h1><br>Sair do<br>Sistema</a>
   </div>
-</div>
-<!-- MODAL LOGOFF -->
+
+  <!-- MODAL LOGOFF -->
 <div class="modal fade" id="modalLogoff" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -156,6 +145,8 @@
     </div>
   </div>
 </div>
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
