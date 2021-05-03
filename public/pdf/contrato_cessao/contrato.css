@@ -5,6 +5,9 @@ html, ul {
   list-style: none;
   font-family: "TrebuchetMS", sans-serif;
 }
+body {
+  -webkit-print-color-adjust: exact;
+}
 main {
   max-width: 600px;
   margin: 0 auto;
@@ -41,64 +44,6 @@ p {
   margin: 50px auto 30px;
 }
 
-/*
-.container_dados {
-  margin: 50px auto;
-}
-
-.titulo_preambulo {
-  font-size: 18px;
-  font-weight: bolder;
-}
-.address_row, .representante_row {
-  display: flex;
-  margin: -20px 0 -20px;  
-}
-.cidade {
-  flex: 60%;
-}
-.uf {
-  flex: 20%;
-}
-.cep {
-  flex: 20%;
-}
-
-.representante_row {
-  display: flex;
-  margin-top: -20px;
-}
-.cargo {
-  flex: 70%;
-}
-.cpf_representante {
-  flex: 30%
-}
-
-.signature {
-  max-width: 600px;
-  margin: 200px auto 700px;
-}
-.signature h4 {
-  text-align: center;
-}
-
-.signature-productor {
-  margin: 80px auto 80px;
-}
-.signature-productor h4 {
-  margin-bottom: 40px;
-}
-.signature p {
-  text-align: start;
-}
-
-
-.signature span {
-  font-size: 16px;
-  font-weight: bold;
-}
-*/
 section {
   max-width: 600px;
   margin: 0 auto;
@@ -142,15 +87,12 @@ section h3 {
   height: 1px;
   width: 200px;
 }
-button {
-  display: block;
-  margin: o auto;
-}
 button:hover {
   opacity: 0.8;
 }
 button {
   background-color: #397437;
+  display: block;
   color: #fff;
   font-size: 18px;
   border: none;

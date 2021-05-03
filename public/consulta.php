@@ -55,8 +55,8 @@
                 Notificações
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Solicitação de Documentos</a></li>
-                <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Boas-vindas</a></li>
+                <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
+                <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -92,7 +92,7 @@
 <div class="container-xxl d-flex justify-content-end pb-5 pt-4">
   <a id="whatsBtn" onclick="customerMsg()" class="btn btn-success mx-1" target="_blank">Enviar mensagem <i class="fab fa-whatsapp"></i></a>
   <a href="https://outlook.office.com/mail/inbox" target="_blank" class="btn btn-info mx-1">Enviar E-mail <i class="far fa-envelope"></i></a>
-  <a class="btn btn-warning mx-1">Solic. Documentos <i class="far fa-file-pdf"></i></a>
+  <a href="pdf/solicitacao_documento/solicitacao-documento.html" class="btn btn-warning mx-1">Solic. Documentos <i class="far fa-file-pdf"></i></a>
   <a href="pdf/contrato_cessao/contrato-cessao-PLUMA.html" class="btn btn-primary mx-1">Contrato Cessão <i class="far fa-file-pdf"></i></a>
   <a href="pdf/termo_cessao/termo-cessao-PLUMA.html" class="btn btn-primary mx-1">Termo Cessão <i class="far fa-file-pdf"></i></a>
   <a class="btn btn-success mx-1">Boas-vindas <i class="far fa-file-pdf"></i></a>

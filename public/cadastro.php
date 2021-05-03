@@ -57,8 +57,8 @@
                 Notificações
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Solicitação de Documentos</a></li>
-                <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Boas-vindas</a></li>
+                <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
+                <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
               </ul>
             </li>
             <li class="nav-item">

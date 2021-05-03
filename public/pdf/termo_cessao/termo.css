@@ -4,6 +4,9 @@ html, ul {
   list-style: none;
   font-family: "TrebuchetMS", sans-serif;
 }
+body {
+  -webkit-print-color-adjust: exact;
+}
 button {
   display: block;
   margin: 0 auto;
@@ -211,23 +214,6 @@ section {
   height: 1px;
   width: 200px;
 }
-/*
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-input {
-  height: 30px;
-  border-radius: 50px;
-  border-color: #3dd969;
-  margin: 10px 0;
-  outline: none;
-  font-size: 20px;
-}
-*/
 
 button {
   background-color: #3dd969;

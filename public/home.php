@@ -95,8 +95,8 @@
                 Notificações
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Solicitação de Documentos</a></li>
-                <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Boas-vindas</a></li>
+                <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
+                <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -108,7 +108,7 @@
     </nav>
 
     <div class="header">
-      <p><i class="fas fa-user"></i> <?php echo "TESTE"?> </p>
+      <p></i> <?php echo ""?> </p>
       <p><script> document.write(new Date().toLocaleDateString()); </script></p>
     </div>
 
@@ -121,15 +121,30 @@
 
       <a class="item" href="pdf/termo_cessao/termo-cessao-PLUMA.html"><h1 style="color: #3104B4;"><i class="fas fa-file-signature"></i></h1><br>Termo<br>de Cessão</a>
 
-      <a class="item" href="#"><h1 style="color: #FACC2E"><i class="fas fa-file-upload"></i></h1><br>Solicitação de<br>Documentos</a>
+      <a class="item" href="pdf/solicitacao_documento/solicitacao-documento.html""><h1 style="color: #FACC2E"><i class="fas fa-file-upload"></i></h1><br>Solicitação de<br>Documentos</a>
 
-      <a class="item" href="#"><h1 style="color: #FACC2E"><i class="fas fa-handshake"></i></h1><br>Notificação de<br>Boas-Vindas</a>
+      <a class="item" href="pdf/boas_vindas/boas-vindas.html""><h1 style="color: #FACC2E"><i class="fas fa-handshake"></i></h1><br>Notificação de<br>Boas-Vindas</a>
 
-      <a class="item" href="#" onclick="localStorage.clear()"><h1 style="color: #FE2E64;"><i class="fas fa-trash-alt"></i></h1><br>Limpar<br>LocalStorage</a>
+      <a class="item"type="button" data-bs-toggle="modal" data-bs-target="#modalClearLocalstorage"><h1 style="color: #FE2E64;"><i class="fas fa-trash-alt"></i></h1><br>Limpar<br>LocalStorage</a>
 
-      <a class="item" href="home.php"><h1 style="color: #FE2E64;"><i class="fas fa-sign-out-alt"></i></h1><br>Sair do<br>Sistema</a>
+      <a class="item" type="button" data-bs-toggle="modal" data-bs-target="#modalLogoff"><h1 style="color: #FE2E64;"><i class="fas fa-sign-out-alt"></i></h1><br>Sair do<br>Sistema</a>
   </div>
 
+  <!--MODAL CLEAR LOCALSTORAGE-->
+<div class="modal fade" id="modalClearLocalstorage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Você realmente deseja excluir todos os cadastros de Localstorage?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <a type="button" onclick="localStorage.clear()" class="btn btn-danger">Excluir tudo</a>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- MODAL LOGOFF -->
 <div class="modal fade" id="modalLogoff" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -140,7 +155,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <a type="button" href="logoff.php" class="btn btn-success">Sair</a>
+        <a type="button" href="logoff.php" class="btn btn-danger">Sair</a>
       </div>
     </div>
   </div>
