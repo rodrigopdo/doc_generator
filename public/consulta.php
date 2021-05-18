@@ -57,6 +57,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
                 <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
+                <li><a class="dropdown-item" href="pdf/reprovacao/reprovacao.html">Reprovação</a></li>
               </ul>
             </li>
             <li class="nav-item">
