@@ -7,32 +7,33 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
-  <link rel="stylesheet" type="text/css" href="solicitacao-documento.css">
-  <link rel="stylesheet" type="text/css" href="solicitacao-documento-print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="pendencia-assinatura.css">
+  <link rel="stylesheet" type="text/css" href="pendencia-assinatura-print.css" media="print" />
 
-  <script defer src="solicitacao-documento.js"></script>  
+  <script defer src="pendencia-assinatura.js"></script>  
 
-  <title>Solicitação de Documentos</title>
+  <title>Pendência de Assinatura</title>
 </head>
 <body>
 
 <main class="container_sm">
   <div class="container_dados">
   <img class="logo" src="../../assets/logo-dark.png" alt="Agroforte">
-  <div class="header">Solicitação de Documentos</div>
+  <div class="header">Assinatura de Contrato Pendente</div>
   <p class="date">São Paulo, <span id="dateToday"></span></p>
   <h2>Caro <span id="nameCustomer"></span>, </h2>
 
-    <h4>Para continuarmos com a análise do seu cadastro, pedimos a gentileza que envie a imagem do(os) seguinte(es) documento(os): </h4>  
+    <h4>Vamos concretizar a nossa nova parceria e liberar o seu crédito? Notamos em nosso sistema que você ainda não assinou eletrônicamente o(os)
+      <span id="customerContract"></span>.</h4>  
     
-    <p class="container_xs"><span id="customerDoc"></span> legível (nítida e clara).</p>  
-    <h4>Para a sua comodidade, essas imagens podem ser capturadas e enviadas através do aplicativo Whatsapp™ para o número abaixo:</h4> 
-    <h2><i class="fab fa-whatsapp"></i> (41) 99217-6821</h2> 
-    
-    <h4>Tem alguma dúvida? A Equipe Agroforte pode te ajudar.</h4>
-    <small>Nosso atendimento é em dias úteis, das 08h às 18h (horário de Brasília).</small><br>
-    <h4>E-mail: contato@meuagroforte.com.br</h4>
-    
+    <h4>Reenviamos o contrato para o email: <span id="customerEmail"></span>.</h4>
+
+    <h4>Caso não tenha visualizado, sugerimos verificar na caixa de SPAM do seu e-email.</h4>
+
+    <h4>Tem alguma dúvida? A Equipe Agroforte pode te ajudar.<br><br> 
+      <small>Nosso atendimento é em dias úteis, das 08h às 18h (horário de Brasília).</small><br><br>
+      <h2><i class="fab fa-whatsapp"></i> (41) 99217-6821</h2> 
+      <h4>contato@meuagroforte.com.br</h4>
     <h5>Atenciosamente,<br>Time Agroforte</h5>
     <h5> </h5>
   </main>

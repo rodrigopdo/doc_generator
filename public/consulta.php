@@ -57,6 +57,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
                 <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
+                <li><a class="dropdown-item" href="pdf/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
                 <li><a class="dropdown-item" href="pdf/reprovacao/reprovacao.html">Reprovação</a></li>
               </ul>
             </li>
@@ -96,8 +97,8 @@
   <a href="pdf/solicitacao_documento/solicitacao-documento.html" class="btn btn-warning mx-1">Solic. Documentos <i class="far fa-file-pdf"></i></a>
   <a href="pdf/contrato_cessao/contrato-cessao-PLUMA.html" class="btn btn-primary mx-1">Contrato Cessão <i class="far fa-file-pdf"></i></a>
   <a href="pdf/termo_cessao/termo-cessao-PLUMA.html" class="btn btn-primary mx-1">Termo Cessão <i class="far fa-file-pdf"></i></a>
-  <a class="btn btn-success mx-1">Boas-vindas <i class="far fa-file-pdf"></i></a>
-  <a class="btn btn-secondary mx-1">Reprovação <i class="far fa-file-pdf"></i></a>
+  <a href="pdf/boas_vindas/boas-vindas.html" class="btn btn-success mx-1">Boas-vindas <i class="far fa-file-pdf"></i></a>
+  <a href="pdf/reprovacao/reprovacao.html" class="btn btn-secondary mx-1">Reprovação <i class="far fa-file-pdf"></i></a>
 </div>
 
 <!-- MODAL LOGOFF -->
