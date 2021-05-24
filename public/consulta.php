@@ -16,8 +16,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <script src="js/masks.js"></script>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/masks.js"></script> -->
+    <script defer src="js/app.js"></script>
 
     <title>Consulta de Clientes</title>
   </head>
@@ -40,6 +40,9 @@
             </li>
             <li class="nav-item me-4">
               <a class="nav-link" href="consulta.php">Consulta</a>
+            </li>
+            <li class="nav-item me-4">
+            <a class="nav-link" href="kyc.php">KYC</a>
             </li>
             <li class="nav-item dropdown me-4">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,8 +72,7 @@
       </div>
     </nav>
     
-
-<div class=" container-xxl overflow-auto">
+<div class="container-xxl overflow-auto">
   <table class="table table-striped">
     <thead>
       <tr>

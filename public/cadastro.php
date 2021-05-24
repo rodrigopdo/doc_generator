@@ -43,6 +43,9 @@
             <li class="nav-item me-4">
               <a class="nav-link" href="consulta.php">Consulta</a>
             </li>
+            <li class="nav-item me-4">
+            <a class="nav-link" href="kyc.php">KYC</a>
+            </li>
             <li class="nav-item dropdown me-4">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Contratos
@@ -145,7 +148,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+        <button type="button" onclick="cleanInputs()" class="btn btn-success" data-bs-dismiss="modal">OK</button>
       </div>
     </div>
   </div>

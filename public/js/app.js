@@ -89,6 +89,22 @@ function registerUser() {
   // alert("Dados armazenados em LocalStorage");
 };
 
+function cleanInputs() {
+	document.getElementById("nomeCompleto").value = "";
+	document.getElementById("cpf").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("phone").value = "";
+	document.getElementById("logradouro").value = "";
+	document.getElementById("numero").value = "";
+	document.getElementById("complemento").value = "";
+	document.getElementById("bairro").value = "";
+	document.getElementById("localidade").value = "";
+	document.getElementById("uf").value = "";
+	document.getElementById("cep").value = "";
+	document.getElementById("loan").value = "";
+}
+
+
 //SHOW CUSTOMER LIST
 function showCustomerList() {
 	let customers = []
@@ -134,6 +150,3 @@ function customerMsg() {
 	whatsLink.setAttribute("href", `https://api.whatsapp.com/send?l=pt&phone=55${phoneClean}`);
 }
 
-let jsonData = JSON.parse(localStorage[3]).loan;
-let objData = JSON.parse(jsonData);
-console.log(objData.qtdParcelas);

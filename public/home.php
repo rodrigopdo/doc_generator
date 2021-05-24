@@ -59,9 +59,9 @@
       }
     </style>
 
-    <title>Home</title>
+<title>Home</title>
   </head>
-  <body>
+<body>
 
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
@@ -80,6 +80,9 @@
             </li>
             <li class="nav-item me-4">
               <a class="nav-link" href="consulta.php">Consulta</a>
+            </li>
+            <li class="nav-item me-4">
+            <a class="nav-link" href="kyc.php">KYC</a>
             </li>
             <li class="nav-item dropdown me-4">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -110,7 +113,7 @@
     </nav>
 
     <div class="header">
-      <p></i> <?php echo ""?> </p>
+      <p><?php echo ""?></p>
       <p><script> document.write(new Date().toLocaleDateString()); </script></p>
     </div>
 
@@ -162,7 +165,6 @@
     </div>
   </div>
 </div>
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
