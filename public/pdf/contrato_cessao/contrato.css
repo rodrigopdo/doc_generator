@@ -53,40 +53,58 @@ section h3 {
   text-align: center;
   font-weight: bold;
 }
-
-.signature-row {
-  display: flex;
+.signature-agroforte {
+  margin: 40px auto 40px;
 }
-.signature0:before {
+.signature-customer:before {
   content: " ";
   display: block;
   background-color: #000;
-  margin: 20px auto 10px 0;
+  margin: 20px auto 0;
+  height: 1px;
+  width: 200px;
+}
+.signature-customer {
+  flex: 100%;
+}
+.signature-customer p {
+  text-align: center;
+}
+
+.signature-row {
+  display: flex;
+  justify-content: center;
+}
+.signature1:before {
+  content: " ";
+  display: block;
+  background-color: #000;
+  margin: 20px auto 0;
   height: 1px;
   width: 200px;
 }
 .signature1 {
   flex: 50%;
 }
-.signature1:before {
+.signature1 p {
+  text-align: center;
+}
+
+.signature2:before {
   content: " ";
   display: block;
   background-color: #000;
-  margin: 20px 0 10px 0;
+  margin: 20px auto 0;
   height: 1px;
   width: 200px;
 }
 .signature2 {
   flex: 50%;
 }
-.signature2:before {
-  content: " ";
-  display: block;
-  background-color: #000;
-  margin: 20px 0 10px 0;
-  height: 1px;
-  width: 200px;
+.signature2 p {
+  text-align: center;
 }
+
 button:hover {
   opacity: 0.8;
 }

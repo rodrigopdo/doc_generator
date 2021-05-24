@@ -7,13 +7,6 @@ html, ul {
 body {
   -webkit-print-color-adjust: exact;
 }
-button {
-  display: block;
-  margin: 0 auto;
-}
-button:hover {
-  opacity: 0.8;
-}
 li {
   margin: 20px auto 0;
 }
@@ -107,9 +100,6 @@ section {
   grid-area: col1; 
 }
 
-
-
-
 .address_row, .representante_row {
   display: flex;
   margin: -20px 0 -20px;
@@ -137,10 +127,6 @@ section {
   flex: 50%
 }
 
-
-
-
-
 .representante_row {
   display: flex;
   margin-top: -20px;
@@ -166,10 +152,13 @@ section {
 .signature-productor h4 {
   margin-bottom: 40px;
 }
-.signature-container p {
-  text-align: start;
-}
 
+.signature-agroforte {
+  margin: 80px auto 80px;
+}
+.signature-agroforte h4 {
+  margin-bottom: 40px;
+}
 
 .signature span {
   font-size: 16px;
@@ -185,49 +174,51 @@ section {
   content: " ";
   display: block;
   background-color: #000;
-  margin: 20px auto 10px 0;
+  margin: 20px auto 10px;
   height: 1px;
   width: 200px;
 }
-
-
-.signature1 {
-  flex: 50%;
+.signature0 {
+  flex: 100%;
 }
+.signature0 p {
+  text-align: center;
+}
+
 .signature1:before {
   content: " ";
   display: block;
   background-color: #000;
-  margin: 20px 0 10px 0;
+  margin: 20px auto 10px;
   height: 1px;
   width: 200px;
 }
-.signature2 {
+.signature1 {
   flex: 50%;
+}
+.signature1 p {
+  text-align: center;
 }
 
 .signature2:before {
   content: " ";
   display: block;
   background-color: #000;
-  margin: 20px 0 10px 0;
+  margin: 20px auto 10px;
   height: 1px;
   width: 200px;
 }
-
-button {
-  background-color: #3dd969;
-  color: #fff;
-  font-size: 18px;
-  border: none;
-  border-radius: 50px;
-  padding: 10px 50px;
-  margin: 30px auto;
+.signature2 {
+  flex: 50%;
 }
+.signature2 p {
+  text-align: center;
+}
+
 
 /*FORM*/
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -241,9 +232,11 @@ input {
   margin: 10px 0;
   outline: none;
   font-size: 20px;
-}
+} */
 
 button {
+  display: block;
+  margin: 0 auto;
   background-color: #066406;
   color: #fff;
   font-size: 18px;
@@ -251,6 +244,9 @@ button {
   border-radius: 5px;
   padding: 10px 50px;
   margin: 30px auto;
+}
+button:hover {
+  opacity: 0.8;
 }
 
 a{
