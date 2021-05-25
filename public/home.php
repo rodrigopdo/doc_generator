@@ -90,6 +90,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Contrato de Cessão</a></li>
+                <li><a class="dropdown-item" href="pdf/contrato_cessao_antigo/contrato-cessao-antigo-PLUMA.html">Contrato de Cessão(antigo)</a></li>
                 <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Termo de Cessão</a></li>
               </ul>
             </li>

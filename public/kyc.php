@@ -26,7 +26,6 @@
         margin: 0.1in;
         size: landscape; 
       }
-
       body {
         background-color: #f3f3f3;
         box-sizing: border-box;      
@@ -140,6 +139,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Contrato de Cessão</a></li>
+              <li><a class="dropdown-item" href="pdf/contrato_cessao_antigo/contrato-cessao-antigo-PLUMA.html">Contrato de Cessão(antigo)</a></li>
               <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Termo de Cessão</a></li>
             </ul>
           </li>
@@ -175,7 +175,7 @@
 
       <a class="no-print item" href="https://site.cenprotnacional.org.br/" target="_blank"><h1 style="color: #e74c3c;"><i class="fas fa-stamp"></i></h1><br>Protestos<br>em Cartório</a>
 
-      <a class="no-print item" href="https://sanctionssearch.ofac.treas.gov/" target="_blank"><h1 style="color: #FACC2E"><i class="fas fa-passport"></i></h1><br>Consulta de<br>Estrangeiros</a>
+      <a class="no-print item" href="https://sanctionssearch.ofac.treas.gov/" target="_blank"><h1 style="color: #FACC2E"><i class="fas fa-passport"></i></h1><br>Consulta de<br>Sanções</a>
   </div>
 
   <div class="container-xxl overflow-auto">

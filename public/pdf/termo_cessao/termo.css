@@ -27,12 +27,29 @@ h2 {
   text-align: center;
 }
 h3 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.img-header {
+  display: flex;
+  align-items: flex-end;
+}
+.text-header {
+  display: flex;
+  align-items: flex-end;
+}
+.text-header h5 {
+  margin: 0;
+}
+
 .container_dados {
-  margin: 50px auto;
+  margin: 35px auto;
 }
 .titulo_preambulo {
   font-size: 18px;
