@@ -29,9 +29,15 @@ class DataBase {
 	}
 	register(d) {
 		let id = this.getNextId()
-		//localStorage.setItem("cotacao", jsonData);
 		localStorage.setItem(id, JSON.stringify(d))
 		localStorage.setItem('id', id)
+	}
+	registerChanges(d) {
+		let customerSearchId = parseInt(document.getElementById("inputSearchId").value)
+		// let id = this.getNextId()
+		localStorage.setItem(customerSearchId, JSON.stringify(d))
+		window.location.reload();
+		// localStorage.setItem('id', id)
 	}
 	getCustomerList() {
 		let customers = Array()
@@ -86,8 +92,43 @@ function registerUser() {
 		inputLoan.value
 	)
 	dataBase.register(customerData);
-  // alert("Dados armazenados em LocalStorage");
 };
+
+
+//CUSTOMER DATABASE CHANGES
+function registerUserChanges() {
+
+	let inputName = document.getElementById("nomeCompleto");
+  let inputCpf = document.getElementById("cpf");
+  let inputEmail = document.getElementById("email");
+  let inputPhone = document.getElementById("phone");
+  let inputAddress = document.getElementById("logradouro");
+  let inputNumber = document.getElementById("numero");
+  let inputAddOnAddress = document.getElementById("complemento");
+  let inputDistrict = document.getElementById("bairro");
+  let inputCity = document.getElementById("localidade");
+  let inputUf = document.getElementById("uf");
+  let inputCep = document.getElementById("cep");
+  let inputLoan = document.getElementById("loan");
+
+	let customerData = new CustomerData(
+		inputName.value, 
+		inputCpf.value, 
+		inputEmail.value, 
+		inputPhone.value, 
+		inputAddress.value, 
+		inputNumber.value, 
+		inputAddOnAddress.value,
+		inputDistrict.value,
+		inputCity.value,
+		inputUf.value,
+		inputCep.value,
+		inputLoan.value
+	)
+	dataBase.registerChanges(customerData);
+};
+
+
 
 function cleanInputs() {
 	document.getElementById("nomeCompleto").value = "";
@@ -103,7 +144,6 @@ function cleanInputs() {
 	document.getElementById("cep").value = "";
 	document.getElementById("loan").value = "";
 }
-
 
 //SHOW CUSTOMER LIST
 function showCustomerList() {

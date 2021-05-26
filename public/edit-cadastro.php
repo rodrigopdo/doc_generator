@@ -5,7 +5,7 @@
     header('Location: index.php?login=erro2');
   }
 ?>
-
+ 
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -21,9 +21,9 @@
     <script defer src="js/app.js"></script>
     <script defer src="js/cep.js"></script>
 
-    <title>Gerador de Documentos</title>
+    <title>Edição de Cadastro</title>
   </head>
-  <body class="bg-light">
+<body class="bg-light">
 
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
@@ -79,15 +79,25 @@
     </nav>
     
 <!-- FORM -->
+
+
 <div class="container col-md-8 mt-2">    
   <div class="card">
-    <div class="card-header text-start text-success fw-bold">
-      <h6 class="m-0"><i class="fas fa-user-edit"></i> CADASTRO NOVO CLIENTE </H5> 
+    <div class="row justify-content-between align-items-center p-1">
+      <div class="col-md-5">
+        <h6 class="mt-4 ps-3 text-success"><i class="fas fa-user-edit"></i> ALTERAÇÃO DE DADOS CADASTRAIS</h6>
+      </div>
+      <div class="col-md-3 me-3">
+        <div class="input-group">
+          <input id="inputSearchId" type="text" class="form-control mt-3 px-3 text-success" autofocus placeholder="ID Cliente" required maxlength="2" minlength="2">
+          <button class="btn btn-outline-warning mt-3 mr-3 px-3 text-success" type="button" id="searchIdBtn"><i class="fas fa-search" onclick="fillSearchForm()"></i></button>
+        </div>    
+      </div>
     </div>
-    <div class="card-body pb-0">
+    <div class="card-body">
       <form class="row g-1">
         <div class="col-md-8 form-floating">
-          <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required autofocus maxlength="70" minlength="6">
+          <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required maxlength="70" minlength="6">
           <label for="nomeCompleto" class="form-label">Nome Completo</label>
         </div>
         <div class="col-md-4 form-floating">
@@ -135,24 +145,26 @@
           <label for="loan" class="form-label">Dados Cotação (JSON)</label>
         </div>
 
-        <div class="col-12 mt-3">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#modalSubmitData" onclick="registerUser()" class="btn btn-success col-12">Enviar</button>
+        <div class="col-12 mt-3 mx-auto p-0 row justify-content-end">
+          <button type="button" onclick="cleanSearching()" class="btn btn-warning col-3 me-4">Cancelar</button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#modalSubmitChanges" class="btn btn-success col-3">Salvar alterações</button>
         </div>
       </form>      
     </div>
   </div>
 </div>
 
-<!-- MODAL ENVIAR -->
-<div class="modal fade" id="modalSubmitData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+<!-- MODAL SALVAR MUDANÇAS -->
+<div class="modal fade" id="modalSubmitChanges" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cadastro armazenado em LocalStorage!</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Você deseja salvar as alterações?</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-footer">
-        <button type="button" onclick="cleanInputs()" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success" onclick="registerUserChanges()">Sim</button>
       </div>
     </div>
   </div>
@@ -173,6 +185,44 @@
     </div>
   </div>
 </div>
+
+<script>
+
+function fillSearchForm(){
+  let customerSearchId = document.getElementById("inputSearchId").value;
+  
+  document.getElementById("nomeCompleto").value= JSON.parse(localStorage[customerSearchId]).name;
+  document.getElementById("cpf").value = JSON.parse(localStorage[customerSearchId]).cpf;
+  document.getElementById("email").value = JSON.parse(localStorage[customerSearchId]).email;
+  document.getElementById("phone").value = JSON.parse(localStorage[customerSearchId]).phone;
+  document.getElementById("cep").value = JSON.parse(localStorage[customerSearchId]).cep;
+  document.getElementById("logradouro").value = JSON.parse(localStorage[customerSearchId]).address;
+  document.getElementById("numero").value = JSON.parse(localStorage[customerSearchId]).number;
+  document.getElementById("complemento").value = JSON.parse(localStorage[customerSearchId]).addOnAddress;
+  document.getElementById("bairro").value = JSON.parse(localStorage[customerSearchId]).district;
+  document.getElementById("localidade").value = JSON.parse(localStorage[customerSearchId]).city;
+  document.getElementById("uf").value = JSON.parse(localStorage[customerSearchId]).uf;
+  document.getElementById("loan").value = JSON.parse(localStorage[customerSearchId]).loan;  
+}
+
+function cleanSearching() {
+	document.getElementById("nomeCompleto").value = "";
+	document.getElementById("cpf").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("phone").value = "";
+	document.getElementById("logradouro").value = "";
+	document.getElementById("numero").value = "";
+	document.getElementById("complemento").value = "";
+	document.getElementById("bairro").value = "";
+	document.getElementById("localidade").value = "";
+	document.getElementById("uf").value = "";
+	document.getElementById("cep").value = "";
+	document.getElementById("loan").value = "";
+
+  window.location.reload();
+}
+
+</script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 

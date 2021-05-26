@@ -42,6 +42,9 @@
               <a class="nav-link" href="consulta.php">Consulta</a>
             </li>
             <li class="nav-item me-4">
+              <a class="nav-link" href="edit-cadastro.php">Alteração Cadastral</a>
+            </li>
+            <li class="nav-item me-4">
             <a class="nav-link" href="kyc.php">KYC</a>
             </li>
             <li class="nav-item dropdown me-4">
