@@ -48,24 +48,27 @@
             <a class="nav-link" href="kyc.php">KYC</a>
             </li>
             <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contratos
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contratos</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Contrato de Cessão</a></li>
                 <li><a class="dropdown-item" href="pdf/contrato_cessao_antigo/contrato-cessao-antigo-PLUMA.html">Contrato de Cessão(antigo)</a></li>
                 <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Termo de Cessão</a></li>
+                <li><a class="dropdown-item" href="pdf/aditamento_PLUMA/aditamento-PLUMA.html">Aditamento ao Termo de Cessão</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Notificações
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notificações</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
                 <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
                 <li><a class="dropdown-item" href="pdf/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
                 <li><a class="dropdown-item" href="pdf/reprovacao/reprovacao.html">Reprovação</a></li>
+              </ul>
+            <li class="nav-item dropdown me-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Páginas Externas</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="https://www.ilovepdf.com/pdf_to_jpg">Conversor PDF para Imagem</a></li>
+                <li><a class="dropdown-item" href="https://meuagroforte.sharepoint.com/sites/AgroforteBackoffice">Sharepoint Intranet</a></li>
               </ul>
             </li>
             <li class="nav-item">

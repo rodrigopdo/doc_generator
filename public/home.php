@@ -25,7 +25,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        margin: 70px auto;
+        margin: 20px auto;
       }
       .item {
         width: 200px;
@@ -33,7 +33,7 @@
         color: #333333;
         box-shadow: 0 0.375em 1.6rem 0 rgba(0,0,0,.1);
         margin: 10px;
-        padding: 20px 5px;
+        padding: 15px 5px;
         text-align: center;
         border-radius: 10px;
         transition: 0.3s ease-in;
@@ -88,24 +88,27 @@
             <a class="nav-link" href="kyc.php">KYC</a>
             </li>
             <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contratos
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contratos</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Contrato de Cessão</a></li>
                 <li><a class="dropdown-item" href="pdf/contrato_cessao_antigo/contrato-cessao-antigo-PLUMA.html">Contrato de Cessão(antigo)</a></li>
                 <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Termo de Cessão</a></li>
+                <li><a class="dropdown-item" href="pdf/aditamento_PLUMA/aditamento-PLUMA.html">Aditamento ao Termo de Cessão</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Notificações
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notificações</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
                 <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
                 <li><a class="dropdown-item" href="pdf/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
                 <li><a class="dropdown-item" href="pdf/reprovacao/reprovacao.html">Reprovação</a></li>
+              </ul>
+            <li class="nav-item dropdown me-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Páginas Externas</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="https://www.ilovepdf.com/pdf_to_jpg">Conversor PDF para Imagem</a></li>
+                <li><a class="dropdown-item" href="https://meuagroforte.sharepoint.com/sites/AgroforteBackoffice">Sharepoint Intranet</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -126,17 +129,25 @@
 
       <a class="item" href="consulta.php"><h1 style="color: #088A29;"><i class="fas fa-search"></i></h1><br>Consulta<br>de Cliente</a>
 
+      <a class="item" href="edit-cadastro.php"><h1 style="color: #088A29;"><i class="fas fa-redo"></i></h1><br>Alteração<br>Cadastral</a>
+      
+      <a class="item" href="kyc.php"><h1 style="color: #FE9A2E;"><i class="fas fa-id-card"></i></h1><br>Validação<br>Documetos (KYC)</a>
+
       <a class="item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html"><h1 style="color: #3104B4;"><i class="fas fa-file-signature"></i></h1><br>Contrato<br>de Cessão</a>
 
       <a class="item" href="pdf/termo_cessao/termo-cessao-PLUMA.html"><h1 style="color: #3104B4;"><i class="fas fa-file-signature"></i></h1><br>Termo<br>de Cessão</a>
 
-      <a class="item" href="pdf/solicitacao_documento/solicitacao-documento.html""><h1 style="color: #FACC2E"><i class="fas fa-file-upload"></i></h1><br>Solicitação de<br>Documentos</a>
+      <a class="item" href="pdf/solicitacao_documento/solicitacao-documento.html""><h1 style="color: #FACC2E;"><i class="fas fa-file-upload"></i></h1><br>Solicitação de<br>Documentos</a>
 
-      <a class="item" href="pdf/boas_vindas/boas-vindas.html""><h1 style="color: #FACC2E"><i class="fas fa-handshake"></i></h1><br>Notificação de<br>Boas-Vindas</a>
+      <a class="item" href="pdf/boas_vindas/boas-vindas.html"><h1 style="color: #FACC2E;"><i class="fas fa-handshake"></i></h1><br>Notificação de<br>Boas-Vindas</a>
+      
+      <a class="item" href="https://www.ilovepdf.com/pdf_to_jpg"><h1 style="color: #FA5858;"><i class="far fa-file-pdf"></i></h1><br>Conversor<br>PDF para Imagem</a>
+      
+      <a class="item" href="https://meuagroforte.sharepoint.com/sites/AgroforteBackoffice"><h1 style="color: #00BFFF;"><i class="fas fa-network-wired"></i></h1><br>Sharepoint<br>Intranet</a>
 
-      <a class="item"type="button" data-bs-toggle="modal" data-bs-target="#modalClearLocalstorage"><h1 style="color: #FE2E64;"><i class="fas fa-trash-alt"></i></h1><br>Limpar<br>LocalStorage</a>
+      <a class="item"type="button" data-bs-toggle="modal" data-bs-target="#modalClearLocalstorage"><h1 style="color: #6E6E6E;"><i class="fas fa-trash-alt"></i></h1><br>Limpar<br>LocalStorage</a>
 
-      <a class="item" type="button" data-bs-toggle="modal" data-bs-target="#modalLogoff"><h1 style="color: #FE2E64;"><i class="fas fa-sign-out-alt"></i></h1><br>Sair do<br>Sistema</a>
+      <a class="item" type="button" data-bs-toggle="modal" data-bs-target="#modalLogoff"><h1 style="color: #6E6E6E;"><i class="fas fa-sign-out-alt"></i></h1><br>Sair do<br>Sistema</a>
   </div>
 
   <!--MODAL CLEAR LOCALSTORAGE-->
