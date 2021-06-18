@@ -1,0 +1,149 @@
+html, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "TrebuchetMS", sans-serif;
+}
+body {
+  -webkit-print-color-adjust: exact;
+}
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+main span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main h4 {
+  display: inline-block;
+  margin: 20px auto 10px;
+}
+
+section h3 {
+  margin: 30px auto 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.img-header {
+  display: flex;
+  align-items: flex-end;
+}
+.text-header {
+  display: flex;
+  align-items: flex-end;
+}
+.text-header h5 {
+  margin: 0;
+}
+
+.container_sm {
+  max-width: 580px;
+  margin: 0 0 0 auto;
+}
+.container_xs {
+  max-width: 560px;
+  margin: 0 0 0 auto;
+}
+h2 {
+  font-size: 18px;
+  margin-top: 50px;
+  text-align: center;
+}
+p {
+  line-height: 1.3;
+  text-align: justify;
+}
+.date {
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto 30px;
+}
+
+section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+section h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.signature-agroforte {
+  margin: 40px auto 40px;
+}
+.signature-customer:before {
+  content: " ";
+  display: block;
+  background-color: #000;
+  margin: 20px auto 0;
+  height: 1px;
+  width: 200px;
+}
+.signature-customer {
+  flex: 100%;
+}
+.signature-customer p {
+  text-align: center;
+}
+
+.signature-row {
+  display: flex;
+  justify-content: center;
+}
+.signature1:before {
+  content: " ";
+  display: block;
+  background-color: #000;
+  margin: 20px auto 0;
+  height: 1px;
+  width: 200px;
+}
+.signature1 {
+  flex: 50%;
+}
+.signature1 p {
+  text-align: center;
+}
+
+.signature2:before {
+  content: " ";
+  display: block;
+  background-color: #000;
+  margin: 20px auto 0;
+  height: 1px;
+  width: 200px;
+}
+.signature2 {
+  flex: 50%;
+}
+.signature2 p {
+  text-align: center;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+button {
+  background-color: #397437;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  margin: 30px auto;
+}
+
+a{
+  display: block;
+  text-align: center;
+  margin: 0 auto 50px;
+  text-decoration: none;
+  color: black;
+}
