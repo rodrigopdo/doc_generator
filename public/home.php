@@ -105,6 +105,7 @@
                 <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
                 <li><a class="dropdown-item" href="pdf/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
                 <li><a class="dropdown-item" href="pdf/reprovacao/reprovacao.html">Reprovação</a>
+                <li><a class="dropdown-item" href="pdf/mkt/proposta-cliente/proposta.html">Proposta MKT</a>
                 
             </li>
               </ul>
