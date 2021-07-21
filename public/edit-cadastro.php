@@ -56,6 +56,7 @@
                 <li><a class="dropdown-item" href="pdf/contrato_cessao_antigo/contrato-cessao-antigo-PLUMA.html">Contrato de Cessão(com sacado) PLUMA</a></li>
                 <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Termo de Cessão PLUMA</a></li>
                 <li><a class="dropdown-item" href="pdf/aditamento_PLUMA/aditamento-PLUMA.html">Aditamento PLUMA</a></li>
+                <li><a class="dropdown-item" href="pdf/Plusval/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão PLUSVAL (com sacado)</a></li>
                 <li><a class="dropdown-item" href="pdf/Plusval/contrato_cessao/contrato-cessao.html">Contrato de Cessão PLUSVAL</a></li>
                 <li><a class="dropdown-item" href="pdf/Plusval/termo_cessao/termo-cessao.HTML">Termo de Cessão PLUSVAL</a></li>
               </ul>
