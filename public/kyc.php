@@ -112,7 +112,7 @@
 </head>
 <body onload="showCustomerData()">
 
-<nav class="no-print navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="home.php">
         <img src="assets/logo-light.png" width="100" class="d-inline-block align-top ms-5" alt="">
@@ -131,38 +131,41 @@
             <a class="nav-link" href="consulta.php">Consulta</a>
           </li>
           <li class="nav-item me-4">
-              <a class="nav-link" href="edit-cadastro.php">Alteração Cadastral</a>
-            </li>
-          <li class="nav-item me-4">
-            <a class="nav-link" href="kyc.php">KYC</a>
+            <a class="nav-link" href="edit-cadastro.php">Alterações</a>
           </li>
-            <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contratos</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="pdf/contrato_cessao/contrato-cessao-PLUMA.html">Contrato de Cessão PLUMA</a></li>
-                <li><a class="dropdown-item" href="pdf/contrato_cessao_antigo/contrato-cessao-antigo-PLUMA.html">Contrato de Cessão(com sacado) PLUMA</a></li>
-                <li><a class="dropdown-item" href="pdf/termo_cessao/termo-cessao-PLUMA.html">Termo de Cessão PLUMA</a></li>
-                <li><a class="dropdown-item" href="pdf/aditamento_PLUMA/aditamento-PLUMA.html">Aditamento PLUMA</a></li>
-                <li><a class="dropdown-item" href="pdf/Plusval/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão PLUSVAL (com sacado)</a></li>
-                <li><a class="dropdown-item" href="pdf/Plusval/contrato_cessao/contrato-cessao.html">Contrato de Cessão PLUSVAL</a></li> 
-                <li><a class="dropdown-item" href="pdf/Plusval/termo_cessao/termo-cessao.HTML">Termo de Cessão PLUSVAL</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notificações</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="pdf/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
-                <li><a class="dropdown-item" href="pdf/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
-                <li><a class="dropdown-item" href="pdf/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
-                <li><a class="dropdown-item" href="pdf/reprovacao/reprovacao.html">Reprovação</a></li>
-              </ul>
-            <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Páginas Externas</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="https://www.ilovepdf.com/pdf_to_jpg">Conversor PDF para Imagem</a></li>
-                <li><a class="dropdown-item" href="https://meuagroforte.sharepoint.com/sites/AgroforteBackoffice">Sharepoint Intranet</a></li>
-              </ul>
-            </li>
+          <li class="nav-item me-4">
+          <a class="nav-link" href="kyc.php">KYC</a>
+          </li>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contratos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="pdf/Pluma/contrato_cessao/contrato-cessao.html">Contrato de Cessão PLUMA</a></li>
+              <li><a class="dropdown-item" href="pdf/Pluma/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão(com sacado) PLUMA</a></li>
+              <li><a class="dropdown-item" href="pdf/Pluma/termo_cessao/termo-cessao-PLUMA.html">Termo de Cessão PLUMA</a></li>
+              <li><a class="dropdown-item" href="pdf/Pluma/aditamento_PLUMA/aditamento-PLUMA.html">Aditamento PLUMA</a></li>
+              <li><a class="dropdown-item" href="pdf/Plusval/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão PLUSVAL (com sacado)</a></li>
+              <li><a class="dropdown-item" href="pdf/Plusval/contrato_cessao/contrato-cessao.html">Contrato de Cessão PLUSVAL</a></li> 
+              <li><a class="dropdown-item" href="pdf/Plusval/termo_cessao/termo-cessao.HTML">Termo de Cessão PLUSVAL</a></li>
+              <li><a class="dropdown-item" href="pdf/Vigor/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão VIGOR (com sacado)</a></li>
+              <li><a class="dropdown-item" href="pdf/Vigor/contrato_cessao/contrato-cessao.html">Contrato de Cessão VIGOR</a></li>
+              <li><a class="dropdown-item" href="pdf/Vigor/termo_cessao/termo-cessao.html">Termo de Cessão VIGOR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notificações</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="pdf/notifications/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
+              <li><a class="dropdown-item" href="pdf/notifications/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
+              <li><a class="dropdown-item" href="pdf/notifications/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
+              <li><a class="dropdown-item" href="pdf/notifications/reprovacao/reprovacao.html">Reprovação</a></li>
+            </ul>
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Páginas Externas</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://www.ilovepdf.com/pdf_to_jpg">Conversor PDF para Imagem</a></li>
+              <li><a class="dropdown-item" href="https://meuagroforte.sharepoint.com/sites/AgroforteBackoffice">Sharepoint Intranet</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
             <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#modalLogoff">SAIR <i class="fas fa-sign-out-alt"></i></a>
           </li>
