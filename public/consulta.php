@@ -58,7 +58,7 @@
                 <li><a class="dropdown-item" href="pdf/Plusval/contrato_cessao/contrato-cessao.html">Contrato de Cessão PLUSVAL</a></li> 
                 <li><a class="dropdown-item" href="pdf/Plusval/termo_cessao/termo-cessao.HTML">Termo de Cessão PLUSVAL</a></li>
                 <li><a class="dropdown-item" href="pdf/Vigor/contrato_cessao/contrato-cessao.html">Contrato de Cessão VIGOR</a></li>
-                <li><a class="dropdown-item" href="pdf/Vigor/termo_cessao/termo-cessao.html">Termo de Cessão VIGOR</a></li>
+                <li><a class="dropdown-item" href="pdf/Vigor/termo_cessao/termo-cessao-vigor.html">Termo de Cessão VIGOR</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown me-4">
