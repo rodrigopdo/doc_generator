@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="pendencia-assinatura.css">
+  <link rel="stylesheet" type="text/css" href="pendencia-assinatura-print.css" media="print" />
+
+  <script defer src="pendencia-assinatura.js"></script>  
+
+  <title>Pendência de Assinatura</title>
+</head>
+<body>
+
+<main class="container_sm">
+  <div class="container_dados">
+  <img class="logo" src="../../../assets/logo-dark.png" alt="Agroforte">
+  <div class="header">Assinatura de Contrato Pendente</div>
+  <p class="date">São Paulo, <span id="dateToday"></span></p>
+  <h2>Caro <span id="nameCustomer"></span>, </h2>
+
+    <h4>Vamos concretizar a nossa nova parceria e liberar o seu crédito? Notamos em nosso sistema que você ainda não assinou eletrônicamente o(os)
+      <span id="customerContract"></span>.</h4>  
+    
+    <h4>Reenviamos o contrato para o email: <span id="customerEmail"></span>.</h4>
+
+    <h4>Caso não tenha visualizado, sugerimos verificar na caixa de SPAM do seu e-email.</h4>
+
+    <h4>Tem alguma dúvida? A Equipe Agroforte pode te ajudar.<br><br> 
+      <small>Nosso atendimento é em dias úteis, das 08h às 18h (horário de Brasília).</small><br><br>
+      <h2><i class="fab fa-whatsapp"></i> (41) 99217-6821</h2> 
+      <h4>contato@meuagroforte.com.br</h4>
+    <h5>Atenciosamente,<br>Time Agroforte</h5>
+    <h5> </h5>
+  </main>
+  <div class="noprint">
+    <button class="no-print" onclick="window.print()">Imprimir ou Salvar PDF</button>
+    <a class="no-print" href="../../../home.php">Retornar <i class="fas fa-sign-out-alt"></i></a>
+  </div>
+
+</body>
+</html>
