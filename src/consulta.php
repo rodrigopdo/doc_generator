@@ -65,9 +65,10 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notificações</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="pdf/notifications/solicitacao_documento/solicitacao-documento.html">Solicitação de Documentos</a></li>
-                <li><a class="dropdown-item" href="pdf/notifications/boas_vindas/boas-vindas.html">Boas-vindas</a></li>
-                <li><a class="dropdown-item" href="pdf/notifications/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
-                <li><a class="dropdown-item" href="pdf/notifications/reprovacao/reprovacao.html">Reprovação</a></li>
+              <li><a class="dropdown-item" href="pdf/notifications/boas_vindas_adequacao/boas-vindas.html">Boas-vindas Adequação</a></li>
+              <li><a class="dropdown-item" href="pdf/notifications/boas_vindas_custeio/boas-vindas.html">Boas-vindas Custeio</a></li>
+              <li><a class="dropdown-item" href="pdf/notifications/pendencia_assinatura/pendencia-assinatura.html">Pendência de Assinatura</a></li>
+              <li><a class="dropdown-item" href="pdf/notifications/reprovacao/reprovacao.html">Reprovação</a></li>
               </ul>
             <li class="nav-item dropdown me-4">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Páginas Externas</a>
