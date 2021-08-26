@@ -147,10 +147,10 @@ let objData = JSON.parse(jsonData);
 
 //TERMO CESSÃO - ANEXO 1
 
-//HEADER
-let correctDateFormat = objData.dataOperacao.replace(/-/g, ",");
-let myDate = new Date(correctDateFormat);
-document.getElementById("dtOperacao").innerHTML = myDate.toLocaleDateString();
+//HEADER ///TIRAR COMENTÁRIO PARA PRODUÇÃO
+// let correctDateFormat = objData.dataOperacao.replace(/-/g, ",");
+// let myDate = new Date(correctDateFormat);
+// document.getElementById("dtOperacao").innerHTML = myDate.toLocaleDateString();
 
 document.getElementById("qtParcelas").innerHTML = objData.qtdParcelas;
 document.getElementById("valorTac").innerHTML = objData.taxaAberturaCredito.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
