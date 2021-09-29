@@ -64,6 +64,8 @@
               <li><a class="dropdown-item" href="pdf/Avenorte/contrato_cessao/contrato-cessao.html">Contrato de Cessão AVENORTE</a></li>
               <li><a class="dropdown-item" href="pdf/Avenorte/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão(com sacado) AVENORTE</a></li>
               <li><a class="dropdown-item" href="pdf/Avenorte/termo_cessao/termo-cessao.html">Termo de Cessão AVENORTE</a></li>
+              <li><a class="dropdown-item" href="pdf/Coopeavi/contrato_cessao/contrato-cessao.html">Contrato de Cessão COOPEAVI</a></li>
+              <li><a class="dropdown-item" href="pdf/Coopeavi/termo_cessao/termo-cessao.html">Termo de Cessão COOPEAVI</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown me-4">
