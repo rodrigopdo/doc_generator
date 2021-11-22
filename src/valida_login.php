@@ -6,6 +6,8 @@
   $user_app = array(
     array( 'user' => 'rodrigo', 'password' => '131004'),
     array( 'user' => 'marcio', 'password' => '101078'),
+    array( 'user' => 'johnattan', 'password' => '060497'),
+    array( 'user' => 'gabriel', 'password' => '280595'),
     array( 'user' => 'gustavo', 'password' => '511505'),
   );
   
