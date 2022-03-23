@@ -102,10 +102,32 @@
               <li><a class="dropdown-item" href="pdf/Avenorte/contrato_cessao/contrato-cessao.html">Contrato de Cessão AVENORTE</a></li>
               <li><a class="dropdown-item" href="pdf/Avenorte/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão(com sacado) AVENORTE</a></li>
               <li><a class="dropdown-item" href="pdf/Avenorte/termo_cessao/termo-cessao.html">Termo de Cessão AVENORTE</a></li>
+
+
+              <li><a class="dropdown-item" href="pdf/Novamerica/contrato_cessao/contrato-cessao.html">Contrato de Cessão Novamérica</a></li>
+              <li><a class="dropdown-item" href="pdf/Novamerica/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão(com sacado) Novamérica</a></li>
+              <li><a class="dropdown-item" href="pdf/Novamerica/termo_cessao/termo-cessao.html">Termo de Cessão Novamérica</a></li>
+              
+              <li><a class="dropdown-item" href="pdf/Cvale/contrato_cessao/contrato-cessao.html">Contrato de Cessão Cvale</a></li>
+              <li><a class="dropdown-item" href="pdf/Cvale/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão(com sacado) Cvale</a></li>
+              <li><a class="dropdown-item" href="pdf/Cvale/termo_cessao/termo-cessao.html">Termo de Cessão Cvale</a></li>
+              
+              <li><a class="dropdown-item" href="pdf/Vibra/contrato_cessao/contrato-cessao.html">Contrato de Cessão Vibra</a></li>
+              <li><a class="dropdown-item" href="pdf/Vibra/contrato_cessao/contrato-cessao-com-sacado.html">Contrato de Cessão(com sacado) Vibra</a></li>
+              <li><a class="dropdown-item" href="pdf/Vibra/termo_cessao/termo-cessao.html">Termo de Cessão Vibra</a></li>
+              
+              
+              
+              
+    
+              
               <li><a class="dropdown-item" href="pdf/Coopeavi/contrato_cessao/contrato-cessao.html">Contrato de Cessão COOPEAVI</a></li>
               <li><a class="dropdown-item" href="pdf/Coopeavi/termo_cessao/termo-cessao.html">Termo de Cessão COOPEAVI</a></li>
             </ul>
           </li>
+
+
+
           <li class="nav-item dropdown me-4">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notificações</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
